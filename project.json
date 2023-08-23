@@ -1,0 +1,11 @@
+{
+  "slug": "retrieval-metrics",
+  "title": "Retrieval metrics",
+  "description": "Score ranked document IDs against supplied relevance grades using precision, recall, reciprocal rank, average precision and nDCG at k.",
+  "category": "evaluation",
+  "demo_args": [
+    "--input",
+    "example.json"
+  ],
+  "expected_exit": 0
+}
