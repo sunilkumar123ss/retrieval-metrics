@@ -1,0 +1,1 @@
+{"queries":[{"relevant":{"doc-a":3,"doc-b":1},"ranking":["doc-x","doc-a","doc-b"]},{"relevant":{"doc-c":2},"ranking":["doc-c","doc-y"]}]}
