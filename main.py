@@ -36,3 +36,11 @@ def score_query(relevant, ranking, k):
         "ndcg": dcg / idcg if idcg else 0.0,
     }
 
+
+def evaluate(queries, k):
+    if not isinstance(queries, list) or not queries:
+        raise ValueError("queries must be a nonempty list")
+    scores = [score_query(q["relevant"], q["ranking"], k) for q in queries]
+    return {"k": k, "queries": scores,
+            "mean": {metric: sum(s[metric] for s in scores) / len(scores) for metric in scores[0]}}
+
