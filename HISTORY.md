@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 4 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 5 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -16,7 +16,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 2 | 2023-08-25T14:57:07+05:30 | Add synthetic input fixtures and reference data (present) |
 | 3 | 2024-05-12T11:36:38+05:30 | Implement score query (present) |
 | 4 | 2024-08-09T09:56:06+05:30 | Implement evaluate (present) |
-| 5 | 2024-11-23T11:07:51+05:30 | Expose the command-line demonstration and input handling (later stage) |
+| 5 | 2024-11-23T11:07:51+05:30 | Expose the command-line demonstration and input handling (present) |
 | 6 | 2024-11-28T13:25:22+05:30 | Test rank sensitive metrics (later stage) |
 | 7 | 2024-12-20T13:32:24+05:30 | Test empty judgments and short ranking (later stage) |
 | 8 | 2025-07-17T19:07:02+05:30 | Test ideal ranking (later stage) |
