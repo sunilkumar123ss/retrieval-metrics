@@ -12,3 +12,7 @@ class RetrievalTests(unittest.TestCase):
         self.assertAlmostEqual(result["average_precision"], (0.5 + 2 / 3) / 2)
         self.assertAlmostEqual(result["ndcg"], (7 / math.log2(3) + 0.5) / (7 + 1 / math.log2(3)))
 
+    def test_empty_judgments_and_short_ranking(self):
+        self.assertEqual(score_query({}, [], 5)["ndcg"], 0)
+        self.assertEqual(score_query({"a": 1}, ["a"], 5)["precision"], 0.2)
+
