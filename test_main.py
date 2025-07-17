@@ -16,3 +16,6 @@ class RetrievalTests(unittest.TestCase):
         self.assertEqual(score_query({}, [], 5)["ndcg"], 0)
         self.assertEqual(score_query({"a": 1}, ["a"], 5)["precision"], 0.2)
 
+    def test_ideal_ranking(self):
+        self.assertEqual(score_query({"a": 3, "b": 1}, ["a", "b"], 2)["ndcg"], 1)
+
