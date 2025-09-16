@@ -19,3 +19,13 @@ class RetrievalTests(unittest.TestCase):
     def test_ideal_ranking(self):
         self.assertEqual(score_query({"a": 3, "b": 1}, ["a", "b"], 2)["ndcg"], 1)
 
+    def test_bad_input(self):
+        for relevant, ranking, k in [({"a": 1}, ["a", "a"], 2), ({"a": 0}, ["a"], 1), ({}, [], 0)]:
+            with self.subTest(k=k), self.assertRaises(ValueError):
+                score_query(relevant, ranking, k)
+        with self.assertRaises(ValueError):
+            evaluate([], 3)
+
+
+if __name__ == "__main__":
+    unittest.main()
